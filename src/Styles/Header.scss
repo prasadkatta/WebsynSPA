@@ -1,0 +1,50 @@
+$header-bg:rgba(255, 255, 255, 0.80);
+$navlink-color:#87868a;
+$navlink-hovercolor:#09aeb8;
+$subscribe-btn-hover: #09aeb8;
+$subscribe-btn-hover-color: #ffffff;
+.main_menu_area{
+    background: $header-bg;
+    padding: 20px 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);  
+    position: fixed;
+    width: 100%;
+    z-index: 9;    
+    .navbar-brand{
+        max-width: 120px;
+        width: 100%;
+    }
+    .navbar-nav{
+        .nav-link{
+            color: $navlink-color;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 25px 26px 15px 26px !important;
+            &:hover{
+                color: $navlink-hovercolor;
+            }
+        }
+    } 
+    .header_right_btn{
+        margin-left: 80px;
+        a{
+            font-size: 12px;
+            font-weight: 700;
+            color: #38373c;
+            padding: 22px 40px;
+            background-color: #ffd763;
+            text-decoration: none !important;
+            letter-spacing: 1px;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+
+            &:hover{
+                background-color: $subscribe-btn-hover;
+                color: $subscribe-btn-hover-color;
+            }
+        }
+    }
+}
+

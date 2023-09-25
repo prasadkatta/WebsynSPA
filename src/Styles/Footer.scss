@@ -1,0 +1,141 @@
+$footer-bg: #38373c;
+$footer-headsColor: #ffffff;
+$subscribe-btn-bg: #ffd763;
+$subscribe-btn-color: #38373c;
+$subscribe-btn-hover: #09aeb8;
+$subscribe-btn-hover-color: #ffffff;
+$footerlink-color: #b5b4b9;
+$footerlink-color-hover: #09aeb8;
+.footer_content {
+    width: 100%;
+    padding: 120px 0 0;
+    background-color: $footer-bg;
+
+    h2 {
+        color: $footer-headsColor;
+        font-size: 20px;
+        margin-bottom: 35px;
+        font-weight: 700;
+    }
+    p {
+        color: #b5b4b9;
+        padding-right: 60px;
+        margin-bottom: 37px;
+        font-weight: 400;
+    }
+    .footer_link {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            a {
+                color: $footerlink-color;
+                font-size: 16px;
+                line-height: 40px;
+                display: block;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover {
+                    color: $footerlink-color-hover;
+                }
+            }
+        }
+    }
+    .newslatter {
+        input {
+            margin-bottom: 10px;
+            padding: 17px 20px;
+            font-weight: 400;
+            color: #87868a;
+            width: 100%;
+            background-color: #ffffff;
+            border: none;
+        }
+        .btn-yellow {
+            background-color: $subscribe-btn-bg;
+            color: $subscribe-btn-color;
+            padding: 17px 40px;
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none !important;
+            letter-spacing: 1px;
+            font-size: 12px;
+            line-height: normal;
+            &:hover {
+                background-color: $subscribe-btn-hover;
+                color: $subscribe-btn-hover-color;
+            }
+        }
+    }
+    .copyright_area {
+        border-top: 1px solid #535356;
+        margin-top: 85px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .copyright_text p {
+            color: #b5b4b9;
+            margin-top: 10px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        .copyright_social ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+
+            li {
+                display: inline-block;
+                a {
+                    color: #38373c;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #ffffff;
+                    margin: 0 1px;
+                    -webkit-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    transition: 0.3s;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    position: relative;
+
+                    i {
+                        z-index: 1;
+                    }
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: #ffd763;
+                        position: absolute;
+                        border-radius: 50%;
+                        left: 0;
+                        -webkit-transition: 0.3s;
+                        -o-transition: 0.3s;
+                        transition: 0.3s;
+                        -webkit-transform: scale(0);
+                        -ms-transform: scale(0);
+                        transform: scale(0);
+                    }
+                    &:hover::before {
+                        -webkit-transform: scale(1);
+                        -ms-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

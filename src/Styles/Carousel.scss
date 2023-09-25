@@ -1,0 +1,21 @@
+.home-slider{
+    .slick-slide{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .slick-dots{
+        bottom: 30px;
+        li{
+            button{
+                &::before{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .slide-item{
+        display: flex !important;
+    }
+}

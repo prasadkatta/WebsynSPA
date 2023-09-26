@@ -1,5 +1,6 @@
 import logo from '../logo.svg';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Header.scss'
 function Header() {
 
@@ -25,7 +26,7 @@ function Header() {
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 {menuItems.map((item) => (
                                     <li className="nav-item" key={item.id}>
-                                        <a className="nav-link active" aria-current="page" href={item.link}>{item.label}</a>
+                                        <Link  className="nav-link active" aria-current="page" to={item.link}>{item.label}</Link >
                                     </li>
                                 ))}
                             </ul>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Footer.scss'
 function Footer() {
   const [Quicklinks] = useState([
@@ -27,7 +28,7 @@ function Footer() {
             <ul className='footer_link'>
               {Quicklinks.map((item) => (
                 <li key={item.id}>
-                  <a target={item.openInNewTab ? '_blank' : '_self'} href={item.link}>{item.label}</a>
+                  <Link target={item.openInNewTab ? '_blank' : '_self'} to={item.link}>{item.label}</Link>
                 </li>
               ))}
             </ul>

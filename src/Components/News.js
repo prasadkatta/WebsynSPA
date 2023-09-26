@@ -48,7 +48,7 @@ function News() {
                                     <span className='news_date'>{item.news_date}</span>
                                 </div>
                                 <div className='news_details'>
-                                    <span class="comment_author">by <a href="#">{item.comment_author}</a> - <a href="#">{item.comments}</a></span>
+                                    <span className="comment_author">by <a href="#">{item.comment_author}</a> - <a href="#">{item.comments}</a></span>
                                     <h1><a href="#">{item.news_title}</a></h1>
                                     <p>{item.news_desc}</p>
                                 </div>

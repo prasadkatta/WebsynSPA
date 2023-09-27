@@ -38,7 +38,7 @@ function Benefits() {
                         </div>
                     </div>
                     {benefitsList.map(item => (
-                        <div className='col-md-3 col-sm-6'>
+                        <div className='col-md-3 col-sm-6' key={item.id}>
                             <div className='service_benefits_box'>
                                 <img src={item.benefits_icon} />
                                 <h3>{item.benefits_title}</h3>

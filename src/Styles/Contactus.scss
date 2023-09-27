@@ -1,0 +1,80 @@
+.contact_form_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 100px 0;
+    .contact_details {
+        padding-right: 50px;
+        .hero-title-with-shape {
+            margin-bottom: 40px;
+            padding: 0;
+            h4 {
+                font-weight: 400;
+                position: relative;
+                padding-top: 25px;
+                margin: 0;
+                font-size: 20px;
+                color: #38373c;
+            }
+            h1 {
+                font-weight: 300;
+                margin-top: 25px;
+                font-size: 30px;
+                line-height: 36px;
+                color: #38373c;
+                padding: 0;
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 55px;
+            color: #87868a;
+        }
+    }
+    form {
+        input {
+            background: #f1f1f1;
+            color: #87868a;
+            font-weight: 400;
+            padding: 17px 20px;
+            margin-bottom: 20px;
+            border: none;
+            width: 100%;
+        }
+        textarea {
+            background: #f1f1f1;
+            color: #87868a;
+            font-weight: 400;
+            padding: 17px 20px;
+            margin-bottom: 20px;
+            border: none;
+            width: 100%;
+        }
+        .half_width {
+            width: 48%;
+            float: left;
+        }
+        .input_m_right {
+            margin-right: 4%;
+        }
+        .btn-yellow {
+            background-color: #ffd763;
+            color: #38373c;
+            padding: 17px 40px;
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none !important;
+            letter-spacing: 1px;
+            font-size: 12px;
+            border: none;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            &:hover {
+                background-color: #09aeb8;
+                color: #ffffff;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.service_benefits_area {
+    padding: 100px 0;
+    .section-title {
+        margin-bottom: 60px;        
+        padding: 0;
+        h1 {
+            font-size: 54px;
+            font-weight: 300;
+            color: #38373c;
+            line-height: 54px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .service_benefits_box {
+        border: 1px solid #f1f1f1;
+        padding: 50px 30px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        img{
+            max-width:95px;
+            width: 100%;
+            height: auto;           
+            margin: 0 auto;
+            display: block;
+        }
+        h3 {
+            margin: 28px 0 40px 0;
+            font-size: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+            line-height: 28px;
+            font-weight: 600;
+            color: #38373c;
+            padding: 0;
+            text-align: center;
+        }
+        p {
+            color: #87868a;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 30px;
+        }
+        &:hover {
+            -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+        }
+    }
+}

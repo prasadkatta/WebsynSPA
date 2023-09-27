@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import '../Styles/About.scss';
 import Team from './Team';
 import aboutImg from '../Images/about-img.jpg'
+import AboutSection from './AboutSection';
 function About() {
     const aboutDetails = [
         {
@@ -17,6 +18,12 @@ function About() {
     const shouldHideDiv = location.pathname !== "/about";
     return (
         <>
+            {shouldHideDiv ? null : (
+                <>
+                    <AboutSection />
+                    <Team />
+                </>
+            )}
             <div className='about_area'>
                 <div className='container'>
                     <div className='row'>
@@ -38,9 +45,6 @@ function About() {
                     </div>
                 </div>
             </div>
-            {shouldHideDiv ? null : (
-                <Team />
-            )}
         </>
 
     );

@@ -33,49 +33,47 @@ function Services() {
         }
     ]
     const location = useLocation();
-    const shouldHideDiv = location.pathname == "/services";
+    const shouldHideDiv = location.pathname !== "/services";
     return (
         <>
             {shouldHideDiv ? null : (
                 <>
-                    {/* <ServicesSection /> */}
+                    <ServicesSection />
                 </>
             )}
-            {shouldHideDiv ? null : (
-                <div className='service_area'>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-md-12'>
-                                <div className='section-title'>
-                                    <h1>Our services</h1>
-                                </div>
+            <div className='service_area'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-md-12'>
+                            <div className='section-title'>
+                                <h1>Our services</h1>
                             </div>
-                            {servicelist.map(item => (
-                                <div className='col-md-4 col-sm-6' key={item.id}>
-                                    <div className='service_box'>
-                                        <div className='service_img'>
-                                            <img src={item.service_img} alt="service 1" />
-                                        </div>
-                                        <div className='service_details'>
-                                            <h2>{item.service_box_tite}</h2>
-                                            <p>
-                                                {item.servie_box_desc}
-                                            </p>
-                                            <a href="#" className="btn-yellow">
-                                                {item.service_box_action}
-                                            </a>
-                                        </div>
+                        </div>
+                        {servicelist.map(item => (
+                            <div className='col-md-4 col-sm-6' key={item.id}>
+                                <div className='service_box'>
+                                    <div className='service_img'>
+                                        <img src={item.service_img} alt="service 1" />
+                                    </div>
+                                    <div className='service_details'>
+                                        <h2>{item.service_box_tite}</h2>
+                                        <p>
+                                            {item.servie_box_desc}
+                                        </p>
+                                        <a href="#" className="btn-yellow">
+                                            {item.service_box_action}
+                                        </a>
                                     </div>
                                 </div>
-                            ))}
+                            </div>
+                        ))}
 
-                        </div>
                     </div>
                 </div>
-            )}
+            </div>
             {shouldHideDiv ? null : (
                 <>
-                    {/* <Benefits /> */}
+                    <Benefits />
                 </>
             )}
         </>

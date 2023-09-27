@@ -1,0 +1,85 @@
+.team_member_area {
+    padding: 100px 0;
+    .section-title {
+        margin-bottom: 60px;
+        text-align: center;
+        h1 {
+            font-size: 54px;
+            font-weight: 300;
+            color: #38373c;
+            line-height: 54px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .team_member {
+        border: 1px solid #f1f1f1;
+        padding: 10px;
+        position: relative;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        overflow: hidden;
+        height: 410px;
+        img {
+            width: 100%;
+        }
+        .team_details {
+            padding: 30px 0 20px 0;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 15px 0;
+                color: #38373c;
+                text-align: center;
+                span {
+                    color: #87868a;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+            .team_socials {
+                opacity: 0;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    a {
+                        color: #87868a;
+                        display: inline-block;
+                        margin: 0 5px;
+                        text-decoration: none !important;
+                        -webkit-transition: 0.3s;
+                        -o-transition: 0.3s;
+                        transition: 0.3s;
+                        &:hover{
+                            color: #09aeb8;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+            .team_details {
+                bottom: 34px;
+            }
+            .team_socials {
+                opacity: 1;
+            }
+        }
+    }
+}

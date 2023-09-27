@@ -1,0 +1,44 @@
+.breadcrumb_section {
+    background: #e4e4e4;
+    background-size: cover;
+    position: relative;
+    padding-top: 224px;
+    padding-bottom: 120px;
+    text-align: center;
+    .breadcrumb {
+        background: none;
+        margin: 0 0 15px 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        li {
+            color: #838286;
+            font-weight: 400;
+            font-size: 20px;
+            display: inline-block;
+            a {
+                color: #838286;
+                font-weight: 400;
+                font-size: 20px;
+                -webkit-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+            & + ::before {
+                content: "-";
+                color: #838286;
+                padding: 0 5px;
+            }
+        }
+    }
+    h1 {
+        font-size: 54px;
+        font-weight: 300;
+        color: #38373c;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+    }
+}

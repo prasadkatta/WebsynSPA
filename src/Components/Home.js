@@ -6,12 +6,12 @@ import News from './News';
 
 function Home() {
     return (
-        <div>
+        <>
             <Carousel />
             <About />
             <Services />
             <News />
-        </div>
+        </>
     );
 }
 

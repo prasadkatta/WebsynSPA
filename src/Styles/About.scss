@@ -6,6 +6,11 @@ $about-btn-hover-bg:#09aeb8;
 $about-btn-hover-color:#ffffff;
 .about_area {
     padding: 100px 0;
+    .about_image{
+        img{
+            width: 100%;
+        }
+    }
     .about_details {
         h4 {
             position: relative;
